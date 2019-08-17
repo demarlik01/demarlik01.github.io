@@ -12073,7 +12073,7 @@ var imgStyle = {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     style: imgStyle,
-    src: "/static/main.gif",
+    src:  false ? undefined : '' + '/static/main.gif',
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
