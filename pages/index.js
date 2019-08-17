@@ -7,6 +7,6 @@ const imgStyle = {
 
 export default () => (
   <Page>
-    <img style={imgStyle} src={ process.env.BACKEND_URL + '/static/main.gif'}/>
+    <img style={imgStyle} src={ (process.env.NODE_ENV === 'production' ? '/blog' : '') + '/static/main.gif'}/>
   </Page>
 )
