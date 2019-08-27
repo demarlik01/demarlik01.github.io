@@ -1,3 +1,5 @@
+const debug = process.env.NODE_ENV !== 'production'
+
 module.exports = {
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/blog' : '',
+  assetPrefix: !debug ? '/out/' : ''
 }
